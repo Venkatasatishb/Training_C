@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+	int number1, number2;
+	printf("Enter two numbers to swap; ");
+	scanf("%d%d", number1, number2);
+	swap(number1, number2);
+
+}
+swap(int firstNumber, int secondNumber)
+{
+	firstNumber = firstNumber + secondNumber;
+	secondNumber =firstNumber - secondNumber;
+	firstNumber = firstNumber - secondNumber;
+	printf("After swaping : %d, %d.",firstNumber, secondNumber);
+}
